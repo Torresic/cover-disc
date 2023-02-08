@@ -1,0 +1,62 @@
+
+body, html {
+    height: 100%;
+    background-color: #b6e3f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cover {
+    width: 500px;
+    height: 500px;
+    background: url(winnie.jpg);
+    border: solid 1px grey;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-size: contain;
+    z-index: 1;
+}
+
+.vinyl {
+    background: linear-gradient(150deg, rgba(19,19,19,1) 35%, rgba(74,74,74,1) 50%, rgba(19,19,19,1) 65%);
+    height: 450px;
+    width: 450px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    transform: translate(-350px);
+    transition: all 1s;
+}
+    
+
+.inside-layer {
+    height: 150px;
+    width: 150px;
+    background: url(vinylbg.png);
+    background-size: contain;
+    border-radius: 50%;
+    border: solid 5px #b34700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hole {
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.vinyl:hover {
+    transform: translate(-150px) rotate(180deg);
+    transition: all 2s;
+}
